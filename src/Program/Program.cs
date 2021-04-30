@@ -21,11 +21,11 @@ namespace Full_GRASP_And_SOLID
         {
             PopulateCatalogs();
 
-            Recipe recipe = new Recipe();
-            ConsolePrinter.FinalProduct = GetProduct("Café con leche");
-            recipe.AddStep(new Step(GetProduct("Café"), 100, GetEquipment("Cafetera"), 120));
-            recipe.AddStep(new Step(GetProduct("Leche"), 200, GetEquipment("Hervidor"), 60));
-            ConsolePrinter.PrintRecipe();
+            Recipe recipe1 = new Recipe();
+            Recipe.FinalProduct = GetProduct("Café con leche");
+            recipe1.AddStep(new Step(GetProduct("Café"), 100, GetEquipment("Cafetera"), 120));
+            recipe1.AddStep(new Step(GetProduct("Leche"), 200, GetEquipment("Hervidor"), 60));
+            ConsolePrinter.PrintRecipe(recipe1);
     
         }
 
